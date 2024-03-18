@@ -1,7 +1,7 @@
 // main.js
 const navLinks = document.querySelectorAll('nav a');
 const viewProjects = document.querySelector("#viewProjects");
-var rick = true;
+let rick = true;
 
 navLinks.forEach(link => {
   link.addEventListener('click', e => {
@@ -38,10 +38,29 @@ form.addEventListener('submit', e => {
   if(rick){
     song.play();
     rick = false;
-}
-    
     setTimeout(() => {
       song.pause();
         rick = true;
     }, 20000);
+}
+    
+    
+});
+
+const aRick = document.querySelector(".rick");
+aRick.addEventListener('click', e => {
+  e.preventDefault();
+  const song = new Audio('./assets/audio/rolls.mp3');
+  if(rick){
+    song.play();
+    rick = false;
+     setTimeout(() => {
+      song.pause();
+        rick = true;
+        return;
+    }, 20000);
+    
+}
+    
+   
 });
