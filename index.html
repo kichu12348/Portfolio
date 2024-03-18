@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahadevan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="animate__animated animate__fadeInDown">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content animate__animated animate__fadeInUp">
+        <h1>Hi, I'm Mahadevan</h1>
+        <p>An Intermediate Full-Stack Developer</p>
+        <a href="#projects" class="btn" id="viewProjects">View Projects</a>
+      </div>
+      <div class="hero-image animate__animated animate__fadeInRight">
+        <img src="./assets/memeCat.png" alt="Image" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="animate__animated animate__fadeInLeft">
+      <h2>About Me</h2>
+      <p class="aboutMeTxt">
+        I am a passionate full-stack developer specializing in the MERN stack. With an intermediate level of expertise, I strive to create
+        high-quality, responsive, and user-friendly web applications.
+      </p>
+      <a href="#" class="btn">Download Resume</a>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="animate__animated animate__fadeInRight">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card animate__animated animate__fadeInLeft">
+        <img src="./assets/projects/mernChatImg.png" alt="Project 1" class="projectImg" />
+        <div class="breifs">
+          <h3>MernChat</h3>
+          <p>Basic mern stack chat website using websockets</p>
+          <a href="https://kichu12348.github.io/mernchat/" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project-card animate__animated animate__fadeInLeft animate__delay-1s">
+        <img src="./assets/projects/chatKichrom.jpeg" alt="Project 1" class="projectImg" />
+        <div class="breifs">
+          <h3>Chat Room</h3>
+          <p>chat room with backend provided by firebase</p>
+          <a href="https://chatkichromm.online/" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project-card animate__animated animate__fadeInLeft animate__delay-2s">
+        <img src="./assets/projects/notesWeb.jpeg" alt="Project 1" class="projectImg" />
+        <div class="breifs">
+          <h3>Notes</h3>
+          <p>place to download notes uploaded</p>
+          <a href="https://kichu12348.github.io/notes/" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project-card animate__animated animate__fadeInLeft animate__delay-2s">
+        <img src="./assets/projects/blogify.jpeg" alt="Project 1" class="projectImg" />
+        <div class="breifs">
+          <h3>blogify</h3>
+          <p>A simple blog site using server side rendering</p>
+          <a href="https://blogy-cfmo.onrender.com/" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project-card animate__animated animate__fadeInLeft animate__delay-2s">
+        <img src="./assets/projects/weatherWeb.jpeg" alt="Project 1" class="projectImg" />
+        <div class="breifs">
+          <h3>weather</h3>
+          <p></p>
+          <a href="https://kichu12348.github.io/weather/" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project-card animate__animated animate__fadeInLeft animate__delay-2s">
+        <img src="./assets/projects/iwasBoredWeb.jpeg" alt="Project 1" class="projectImg" />
+        <div class="breifs">
+          <h3>i was Booreeedd</h3>
+          <p></p>
+          <a href="https://kichu12348.github.io/iWasBored/" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project-card animate__animated animate__fadeInLeft animate__delay-2s">
+        <img src="./assets/projects/calculatorWeb.jpeg" alt="Project 1" class="projectImg" />
+        <div class="breifs">
+          <h3>calculator</h3>
+          <p>Do not press the idk button</p>
+          <a href="https://kichu12348.github.io/calculator/" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="animate__animated animate__fadeInLeft">
+      <div class="skill-card">
+        <h2 class="heading">Tech Stack</h2>
+        <img src="./assets/html.svg" alt="html" class="skill_img" />
+        <img src="./assets/css.svg" alt="css" class="skill_img" />
+        <img src="./assets/javascript.svg" alt="javascript" class="skill_img" />
+        <img src="./assets/react.svg" alt="react" class="skill_img" />
+        <img src="./assets/nodejs.svg" alt="nodejs" class="skill_img" />
+        <img src="./assets/mongodb.svg" alt="mongodb" class="skill_img" />
+        <img src="./assets/express.svg" alt="express" class="skill_img" />
+      </div>
+    </section>
+
+    <section id="contact" class="animate__animated animate__fadeInUp">
+      <h2>Contact Me</h2>
+      <form class="contactFrm">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <footer class="animate__animated animate__fadeInDown footer">
+      <p>&copy; Mahadevan Reji</p>
+      <div class="social-links">
+        <a href="https://github.com/kichu12348">
+          <img src="./assets/github.svg" alt="GitHub" />
+          
+        </a>
+        <a href="https://www.instagram.com/arcade_.1?igsh=cGFoaGljYzkyaTg%3D&utm_source=qr">
+            <img src="./assets/instagram.svg" alt="instagram" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
