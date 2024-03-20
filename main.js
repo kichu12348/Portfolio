@@ -64,3 +64,23 @@ aRick.addEventListener('click', e => {
     
    
 });
+
+
+const catM = document.querySelector(".catM");
+catM.addEventListener('click', e => {
+  e.preventDefault();
+  const song = new Audio('./assets/audio/Meow.mp3');
+  if(rick){
+    song.play();
+    rick = false;
+     setTimeout(() => {
+      song.pause();
+        rick = true;
+        return;
+    }, 20000);
+    
+}
+    
+   
+});
+
